@@ -704,6 +704,15 @@ li > .all {
 .footer-soc-link:focus {
   background-color: var(--accent-color);
 }
+.footer-email {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--btn-color);
+  margin-bottom: 20px;
+}
 /* -------MODEL WINDOW------- */
 .backdrop {
   position: fixed;
