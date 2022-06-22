@@ -724,11 +724,12 @@ li > .all {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1) rotate(0);
-  width: 500px;
+  width: 518px;
   min-height: 600px;
   background-color: var(--main-title-color);
   border-radius: 4px;
   transition: transform 300ms linear;
+  padding: 40px;
 }
 .modal-close-btn {
   position: absolute;
@@ -750,4 +751,13 @@ li > .all {
 }
 .no-scroll {
   overflow: hidden;
+}
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--forth-title-color);
+  margin-bottom: 16px;
 }
