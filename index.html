@@ -428,7 +428,33 @@
           </svg>
         </button>
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-        <form class=""></form>
+        <form class="modal-form">
+          <label class="modal-label"
+            >Имя
+            <input type="text" name="user-name" class="modal-input" placeholder="" required />
+          </label>
+          <div class="modal-field">
+            <label class="modal-label" for="user-tel">Телефон</label>
+            <input
+              type="tel"
+              name="user-tel"
+              class="modal-input"
+              placeholder=""
+              required
+              pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+              minlength="13"
+              maxlength="13"
+              id="user-tel"
+            />
+          </div>
+          <label class="modal-label" for="user-email">Почта</label>
+          <input type="email" name="user-email" class="modal-input" placeholder="" required />
+          <div class="modal-field">
+            <label class="modal-label" for="modal-text">Комментарий</label>
+            <textarea name="modal-text" id="modal-text" class="modal-text"></textarea>
+          </div>
+          <button type="submit" class="btn-modal">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
