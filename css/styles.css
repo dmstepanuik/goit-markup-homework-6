@@ -797,11 +797,27 @@ li > .all {
 .form-label {
   position: relative;
 }
+.form-input:hover,
+.form-input:focus {
+  border-color: var(--accent-color);
+}
+.form-input {
+  transition: fill var(--timing-function);
+}
 
 .input-icon {
   position: absolute;
   top: 50%;
   left: 12px;
+}
+
+.input-icon {
+  transition: fill var(--timing-function);
+}
+
+.input-icon:hover,
+.input-icon:focus {
+  fill: var(--accent-color);
 }
 
 .form-comment {
@@ -819,16 +835,13 @@ li > .all {
 }
 .form-input {
   width: 100%;
-  height: 48px;
+  height: 50px;
   margin: 0px;
-  padding: 12px 33px;
+  padding: 15px 33px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-}
-
-.form-input:hover,
-.form-input:focus {
-  border-color: var(--accent-color);
+  background-color: transparent;
+  margin-bottom: 16px;
 }
 
 .policy-icon {
