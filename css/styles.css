@@ -784,7 +784,8 @@ li > .all {
   border-radius: 4px;
   outline: transparent;
 }
-.modal-input:focus {
+.modal-input:focus,
+.modal-input:hover {
   border-color: var(--accent-color);
 }
 
