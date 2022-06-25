@@ -759,6 +759,12 @@ li > .all {
   align-items: center;
   justify-content: center;
 }
+
+.modal-btn:hover,
+.modal-btn:focus {
+  color: var(--accent-color);
+}
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -781,6 +787,10 @@ li > .all {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+}
+
+.form-name {
+  display: block;
 }
 .form-chekbox {
   display: flex;
