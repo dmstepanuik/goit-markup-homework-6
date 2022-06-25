@@ -704,7 +704,7 @@ li > .all {
 .footer-soc-link:focus {
   background-color: var(--accent-color);
 }
-.footer-email {
+.footer-form-text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -713,6 +713,12 @@ li > .all {
   color: var(--btn-color);
   margin-bottom: 20px;
 }
+
+.footer-form-sub {
+  display: flex;
+  align-items: center;
+}
+
 /* -------MODEL WINDOW------- */
 .backdrop {
   position: fixed;
@@ -771,29 +777,49 @@ li > .all {
   margin-bottom: 16px;
 }
 
-.modal-field {
-  margin-bottom: 28px;
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
-.input-wrap {
-  position: relative;
+.form-chekbox {
+  display: flex;
+  align-items: center;
 }
-.modal-input {
-  width: 100%;
-  height: 40px;
+.form-chekbox label {
+  margin-left: 7px;
+}
+.form-input {
+  margin: 0px;
+  padding: 12px 33px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  outline: transparent;
 }
-.modal-input:focus,
-.modal-input:hover {
+
+.form-input:hover,
+.form-input:focus {
   border-color: var(--accent-color);
 }
 
-.input-icon {
-  position: absolute;
-  left: 14.3px;
-  top: 50%;
-  transform: translateY(-50%);
+.modal-policy:checked + .policy-text::before {
+  background-color: var(--accent-color);
+  border: none;
+  background-image: url(../images/icon-check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal-policy:focus + .policy-text::before {
+  border-color: var(--accent-color);
+}
+
+.policy-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: var(--accent-color);
+  margin-left: 5px;
 }
 
 .btn-modal {

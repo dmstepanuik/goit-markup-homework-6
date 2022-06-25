@@ -419,10 +419,18 @@
           </ul>
         </div>
       </div>
-      <div class="conect-email">
-        <p class="footer-email">Подпишитесь на рассылку</p>
-      </div>
-    </footer>
+      <div class="footer-form">
+        <p class="footer-form-text">Подпишитесь на рассылку</p>
+        <form name="footer-form-sub" class="footer-form-sub">
+        <label for="footer-form-email"></label>
+        <input class="footer-form-email" name="footer-form-email" type="email" placeholder="E-mail" autocomplete="on" id="footer-form-email">
+        <button type="submit" class="footer-btn-sub">Подписаться
+         <svg class="footer-form-icon" width="24" height="24">
+          <use href="./images/icons.svg#"></use>
+         </svg>
+         </button>
+         </form>
+            </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
@@ -430,42 +438,45 @@
             <use href="./images/icons.svg#close-backdrop"></use>
           </svg>
         </button>
+
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-        <form class="modal-form">
-          <label class="modal-label"
-            >Имя
-            <input type="text" name="user-name" class="modal-input" placeholder=" " required />
-            <svg class="input-icon" width="13" height="13">
-              <use href="./images/icons.svg#person-field"></use>
-            </svg>
-          </label>
-          <div class="modal-field">
-            <label class="modal-label" for="user-tel">Телефон</label>
-            <div class="input-wrap">
-              <input
-                type="tel"
-                name="user-tel"
-                class="modal-input"
-                placeholder=" "
-                required
-                pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
-                minlength="13"
-                maxlength="13"
-                id="user-tel"
-              />
-              <svg class="input-icon" width="13" height="13">
-                <use href="./images/icons.svg#phone-field"></use>
-              </svg>
-            </div>
+        <form class="form"> 
+        <div class="form-field">
+          <label class="form-label" for="name">Имя</label>
+          <input class="form-input" type="text" name="name" id="name" >
+          <use href="./images/icons.svg#person-field"></use>
+          </svg>
           </div>
-          <label class="modal-label" for="user-email">Почта</label>
-          <input type="email" name="user-email" class="modal-input" placeholder=" " required />
+
+            <div class="form-field">
+            <label class="form-label" for="tel">Телефон</label>
+            <input class="form-input" type="tel" name="tel" id="tel" >
+              <svg class="input-icon" width="13" height="13">
+              <use href="./images/icons.svg#phone-field"></use>
+              </svg>
+              </div>
+            
+            <div class="form-field">
+            <label class="form-label" for="mail">Почта</label>
+          <input class="form-input" type="email" name="email" id="email" >   
           <svg class="input-icon" width="13" height="13">
             <use href="./images/icons.svg#email-field"></use>
           </svg>
-          <div class="modal-field">
-            <label class="modal-label" for="modal-text">Комментарий</label>
-            <textarea name="modal-text" id="modal-text" class="modal-text"></textarea>
+          </div>
+          
+          <div class="form-field">
+            <label class="form-label" for="comment">Комментарий</label>
+            <textarea class="form-input" id="comment" cols="30" rows="10"
+              placeholder="Введите текст"></textarea>
+          </div>
+
+          <div class="form-field">
+          <label class="policy-text" for="policy">Соглашаюсь с рассылкой и принимаю 
+           <a href="" class="policy-link">Условия договора</a></label>
+           <input class="modal-policy visually-hidden" type="checkbox" name="policy" id="policy">
+           <svg class="input-icon" width="13" height="13">
+            <use href="./images/icons.svg#icon-iconcheck"></use>
+          </svg>
           </div>
           <button type="submit" class="btn-modal">Отправить</button>
         </form>
