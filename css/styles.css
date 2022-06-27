@@ -719,61 +719,53 @@ li > .all {
   align-items: center;
 }
 
-.footer-form{
+.footer-form {
   margin-left: 93px;
 }
-.footer-form-email{
+.footer-form-email {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-border-radius: 4px;
-background: #2F303A;
-padding-left: 10px;
-padding-right: 10px;
-outline: none;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: #2f303a;
+  padding-left: 10px;
+  padding-right: 10px;
+  outline: none;
 }
 .footer-form-email:hover,
-.footer-form-email:focus{
+.footer-form-email:focus {
   border-color: var(--accent-color);
- }
- .footer-form-email,
-.footer-form-email{
-  transition: var(--timing-function);
- }
-
-
- .footer-form-label{
-  margin-right: 10px;
- }
-
-
-.footer-btn-sub{
-width: 200px;
-height: 50px;
-font-weight: 700;
-font-size: 16px;
-line-height: 1.9;
-padding: 10px 29px;
-display: flex;
-align-items: center;
-text-align: center;
-background: #2196F3;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-border-color:var(--accent-color);
-color:var(--btn-color);
-
 }
-.footer-form-icon{
+.footer-form-email,
+.footer-form-email {
+  transition: var(--timing-function);
+}
+
+.footer-form-label {
+  margin-right: 10px;
+}
+
+.footer-btn-sub {
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  padding: 10px 29px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: var(--accent-color);
+  color: var(--btn-color);
+}
+.footer-form-icon {
   fill: var(--btn-color);
   margin-left: 10px;
-  
 }
-
-
-
-
 
 /* -------MODEL WINDOW------- */
 .backdrop {
@@ -796,7 +788,7 @@ color:var(--btn-color);
   left: 50%;
   transform: translate(-50%, -50%) scale(1) rotate(0);
   width: 528px;
-  min-height: 600px;
+  min-height: 581px;
   background-color: var(--main-title-color);
   border-radius: 4px;
   transition: transform 300ms linear;
@@ -804,6 +796,7 @@ color:var(--btn-color);
 }
 .modal-close-btn {
   position: absolute;
+  padding: 0;
   right: 10px;
   top: 10px;
   width: 30px;
@@ -820,8 +813,8 @@ color:var(--btn-color);
   transition: fill var(--timing-function);
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
+.modal-close-btn .modal-btn:hover,
+.modal-close-btn .modal-btn:focus {
   fill: var(--accent-color);
 }
 
@@ -850,32 +843,29 @@ color:var(--btn-color);
   margin-bottom: 20px;
 }
 
+.form-label:last-child {
+  margin-bottom: 0;
+}
+
 .form-label {
   position: relative;
-  margin-bottom: 28px;
+  margin-bottom: 10px;
 }
 
 .form-input {
   width: 100%;
-  height: 50px;
+  height: 40px;
   margin: 0px;
-  padding: 15px 33px;
+  padding: 12px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   background-color: transparent;
- }
+  outline: transparent;
+}
 
 .form-input:hover,
 .form-input:focus {
   border-color: var(--accent-color);
-}
-.form-input,
-.form-input {
-  transition: var(--timing-function);
-}
-
-.form-input {
-  transition: fill var(--timing-function);
 }
 
 .icon-input {
@@ -888,8 +878,7 @@ color:var(--btn-color);
   transition: fill var(--timing-function);
 }
 
-
- .form-input:hover + .icon-input,
+.form-input:hover + .icon-input,
 .form-input:focus + .icon-input {
   fill: var(--accent-color);
 }
@@ -901,17 +890,10 @@ color:var(--btn-color);
   border-radius: 4px;
   resize: none;
   padding: 12px 16px;
-}
-
-.form-comment:hover,
-.form-comment:focus{
-  border-color: var(--accent-color);
-}
-
-.form-comment,
-.form-comment{
   transition: var(--timing-function);
+  outline: transparent;
 }
+
 .form-name {
   display: block;
   font-weight: 500;
@@ -929,14 +911,16 @@ color:var(--btn-color);
   margin-left: 7px;
 }
 
-.policy-text{
+.policy-text {
   display: flex;
   align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
-
 .policy-icon {
-  display: block;
   width: 16px;
   height: 15px;
   margin-right: 6px;
@@ -955,9 +939,6 @@ color:var(--btn-color);
 }
 
 .policy-link {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: var(--accent-color);
   margin-left: 5px;
